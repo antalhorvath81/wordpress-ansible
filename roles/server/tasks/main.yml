@@ -48,6 +48,9 @@
     - php-mcrypt
     - python-mysqldb
 
+- name: Ensure mysql is running and starts on boot
+  service: name=mysql state=started enabled=true
+
 # https://coderwall.com/p/yez9yw/secure-mysql-with-ansible
 
 # - name: ensure mysql is running and starts on boot
